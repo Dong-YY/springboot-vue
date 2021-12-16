@@ -1,23 +1,33 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <!--    头部-->
+    <Header/>
+    <div style="display: flex">
+      <!--      左导航栏-->
+      <LeftMenu/>
+      <!--      主体部分-->
+      <Home/>
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  import Header from "./components/Header";
+  import LeftMenu from "./components/LeftMenu";
+  import Home from "./views/Home";
+
+  export default {
+    name: 'App',
+
+    components: {
+      Header,
+      LeftMenu,
+      Home
+    }
+  }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
