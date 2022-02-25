@@ -8,4 +8,4 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/springbootvue
     username: root
-    password: dongyuya812.
+    password: root123
